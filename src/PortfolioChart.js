@@ -14,6 +14,7 @@ export default function PortfolioChart({ trades }) {
 
   const netProfit = cumulative;
 
+
   const data = {
     labels: labels,
     datasets: [
@@ -31,12 +32,27 @@ export default function PortfolioChart({ trades }) {
   };
 
   return (
-    <div style={{ marginTop: 40 }}>
-      <h2 style={{ fontSize: 32, textAlign: 'center', color: netProfit >= 0 ? '#4caf50' : '#f44336' }}>
+    <div
+      style={{
+        marginTop: 40,
+        textAlign: 'center',      
+        maxWidth: 900,           
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      }}
+    >
+      <h2
+        style={{
+          fontSize: 32,
+          color: netProfit >= 0 ? '#4caf50' : '#f44336',
+          marginBottom: 20,
+        }}
+      >
         Portfolio: ${netProfit.toFixed(2)}
       </h2>
+
       {trades.length === 0 ? (
-        <p style={{ textAlign: 'center', color: '#555' }}>No trades to calculate P/L.</p>
+        <p style={{ color: '#555' }}>No trades to calculate P/L.</p>
       ) : (
         <Line data={data} />
       )}
