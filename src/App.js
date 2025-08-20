@@ -35,7 +35,7 @@ export default function App() {
       />
 
       <div style={{ textAlign: 'center', marginTop: 20 }}>
-        <h1 style={{ fontSize: 48, marginBottom: 5, color: '#00BFFF' }}>TradeRex</h1>
+        <h1 style={{ fontSize: 10, marginBottom: 5, color: '#000000ff' }}>TradeRex</h1>
         <p style={{ fontStyle: 'italic', color: '#00796b' }}>Trade it. Track it. Tame the market.</p>
       </div>
 
