@@ -35,9 +35,12 @@ export default function App() {
       />
 
       <div style={{ textAlign: 'center', marginTop: 20 }}>
-        <h1 style={{ fontSize: 10, marginBottom: 5, color: '#000000ff' }}>TradeRex</h1>
-        <p style={{ fontStyle: 'italic', color: '#00796b' }}>Trade it. Track it. Tame the market.</p>
+        <h1 style={{ fontSize: 5, marginBottom: 5, color: '#000000' }}>TradeRex</h1>
+        <p style={{ fontStyle: 'italic', color: '#00796b', fontSize: 30 }}> 
+            Trade it. Track it. Tame the market.
+       </p>
       </div>
+
 
       <div style={{ maxWidth: 900, margin: '40px auto' }}>
         <TradeForm addTrade={addTrade} />
